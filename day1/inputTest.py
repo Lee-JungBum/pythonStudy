@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('../files/input.txt','r')
+sys.stdin = open('../files/day1/input.txt', 'r')
 
 # _str = input()
 

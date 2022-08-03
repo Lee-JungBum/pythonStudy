@@ -1,9 +1,9 @@
 import sys
-sys.stdin = open('../files/input2.txt','r')
+sys.stdin = open('../files/day1/input2.txt', 'r')
 ans = 0
 cnt = int(input())
-for i in range(1,11):
-    number = int(input())
+for i in range(1,cnt+1):
+    _ = int(input())
     data = list(map(int,input().split()))
     newList = [0]*(max(data)+1)
     for j in range(0,101):
@@ -12,7 +12,7 @@ for i in range(1,11):
 
     ans = list.index(newList,listMax)
 
-    while True:
+    for j in range(listMax,101):
 
         try:
             ans = list.index(newList, listMax)

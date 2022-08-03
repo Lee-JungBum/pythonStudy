@@ -1,11 +1,13 @@
 import sys
-sys.stdin = open('../files/input3.txt','r')
+sys.stdin = open('../files/day1/input3.txt', 'r')
 ans = 0
 cnt = int(input())
 for i in range(1,cnt+1):
+    # data = [i if i&1 else -i for i in range(1, num+1)
     num= int(input())
     a=1
     ans=0
+
     for j in range(1,num+1):
         if j%2==0:
 
@@ -14,4 +16,5 @@ for i in range(1,cnt+1):
         else:
             ans+=a
             a+=1
+
     print('#%d %d' % (i, ans))

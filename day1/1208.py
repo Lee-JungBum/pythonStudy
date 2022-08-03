@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('../files/input.txt','r')
+sys.stdin = open('../files/day1/input.txt', 'r')
 ans = 0
 for i in range(1,11):
     cnt = int(input())
@@ -9,7 +9,7 @@ for i in range(1,11):
         indexMax=data.index(_max)
         _min=min(data)
         indexMin=data.index(_min)
-        data[indexMax] -= 1;
-        data[indexMin] += 1;
+        data[indexMax] -= 1
+        data[indexMin] += 1
     ans=max(data)-min(data)
     print('#%d %d' % (i,ans))
